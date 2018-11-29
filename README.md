@@ -32,9 +32,9 @@ A C# program, that takes a word and a sentence from user input and then checks h
 ## Setup/Installation Requirements
 
 * Clone Repository
-* Move into WordCounter/Models/ directory
-* compile main program file using command line 'mcs WordCounter.cs'
-* run program using command line 'mono WordCounter.exe'
+* In the terminal 'cd' into WordCounter sub-directory, run command line 'dotnet restore','dotnet build'
+* In the terminal 'cd' into WordCounter.Tests sub-directory, run command line 'dotnet test'
+
 
 
 ## Known Bugs
