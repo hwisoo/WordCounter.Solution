@@ -31,9 +31,15 @@ A C# program, that takes a word and a sentence from user input and then checks h
 
 ## Setup/Installation Requirements
 
-* Clone Repository
-* In the terminal 'cd' into WordCounter sub-directory, run command line 'dotnet restore','dotnet build'
-* In the terminal 'cd' into WordCounter.Tests sub-directory, run command line 'dotnet test'
+Download .NET Core 2.1.3 SDK and .NET Core Runtime 2.0.9 and install them. Download Mono and install it.
+
+Clone this repository: $ git clone https://github.com/hwisoo/csharp-WordCounter.Solution.git
+Change into the work directory:: $ cd WordCounter.Solution
+To edit the project, open the project in your preferred text editor.
+
+To run the program, first navigate to the location of the WordCounter.cs file then compile and execute: $ cd WordCounter/Models $ mcs WordCounter.cs; mono WordCounter.exe;
+
+To run the tests, use these commands: $ cd WordCounter.Tests $ dotnet test
 
 
 
