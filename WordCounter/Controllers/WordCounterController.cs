@@ -14,6 +14,15 @@ namespace WordMaster.Controllers
      
       return View();
     }
+
+     [HttpPost("/wordcounter")]
+    public ActionResult Result(string inputWord, string inputSentence)
+    {
+      WordCounter newWordCounter = new WordCounter(inputWord, inputSentence);
+      
+      return View("Result", newWordCounter);
+    }
+  
   
 
   }
