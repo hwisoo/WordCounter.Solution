@@ -2,11 +2,21 @@
   Layout = "_Layout";
 }
 <div class="container">
-  <form action="/wordcounter" method="post">
-  <label for="inputWord">Input Word:</label>
-    <input class="form-control" id="inputWord" name="inputWord" type="text"><br>
-    <label for="inputSentence">Input Sentence: </label>
-    <input class="form-control" id="inputSentence" name="inputSentence" type="text"><br>
-    <button class="btn btn-primary" type="submit">Submit</button>
+  <form action="/wordcounter/results" method="post">
+  <div class="row">
+      <div class="col col-md-2">
+      <label for="inputWord">Input Word:</label>
+      <input class="form-control" id="inputWord" name="inputWord" placeholder="Enter word" type="text"><br>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col col-md-4">
+      <label for="inputSentence">Input Sentence: </label>
+      <input class="form-control" id="inputSentence" name="inputSentence" placeholder="Enter sentence" type="text"><br>
+      <button class="btn btn-primary" type="submit">Submit</button>
+    </div>
+  </div>
+    
   </form>
 </div>

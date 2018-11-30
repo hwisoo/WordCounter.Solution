@@ -1,5 +1,5 @@
 
-namespace WordMaster
+namespace WordMaster.Models
 {
   public class WordCounter
   {
