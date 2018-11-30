@@ -5,12 +5,13 @@ namespace WordMaster
   {
     public string _word;
     public string _sentence;
-    public int counter = 0;
+    public int _counter = 0;
 
     public WordCounter(string inputWord, string inputSentence)
     {
       _word = inputWord;
       _sentence = inputSentence;
+      _counter = 0;
     }
 
     public string GetWord()
@@ -37,24 +38,21 @@ namespace WordMaster
       return sentence == _sentence;
     }
 
-    public bool CreateWordArray(string sentence)
+    public string WordCounterCheck()
     {
       string[] Arr = _sentence.Split(' ');
-      string[] Arr2 = sentence.Split(' ');
-      return (Arr.Length == 3 && Arr2.Length ==3);
+      
+      foreach(string word in Arr)
+      {
+        if(word == _word)
+        {
+          _counter++;
+        }
+      }
+      return _word + " appears" + _counter + " times in the sentence.";
     }
 
-    public bool CheckEachWord(string[] array)
-    {
-      foreach(string word in array)
-      {
-        if(MatchesWord(word) ==true)
-        {
-          counter++;
-        }
-      }  
-      return counter==1;
-    }
+
 
     public bool OutputMessage(string message)
     {
