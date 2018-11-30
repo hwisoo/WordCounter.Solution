@@ -7,20 +7,33 @@ using WordMaster.Models;
 namespace WordMaster.Tests
 {
     [TestClass]
-    public class HomeControllerTest
+    public class WordCounterControllerTest
     {
 
       [TestMethod]
       public void Index_ReturnsCorrectView_True()
       {
         //Arrange
-        HomeController controller = new HomeController();
+        WordCounterController controller = new WordCounterController();
 
         //Act
         ActionResult indexView = controller.Index();
 
         //Assert
         Assert.IsInstanceOfType(indexView, typeof(ViewResult));
+      }
+
+      [TestMethod]
+      public void Result_ReturnsCorrectView_True()
+      {
+        //Arrange
+        WordCounterController controller = new WordCounterController();
+
+        //Act
+        ActionResult resultView = controller.Result("cat", "cat cat cat");
+
+        //Assert
+        Assert.IsInstanceOfType(resultView, typeof(ViewResult));
       }
 
  
