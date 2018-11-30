@@ -1,11 +1,17 @@
+
 namespace WordMaster
 {
   public class WordCounter
   {
-    public string UserInputWord = "cat";
-    public string UserInputSentence = "The cat house";
-    public int counter = 0;
+    private string _word;
+    private string _sentence;
+    private int counter = 0;
 
+    public WordCounter(string UserInputWord, string UserInputSentence)
+    {
+      _word = UserInputWord;
+      _sentence = UserInputSentence;
+    }
 
     public bool MatchesWord(string word)
     {
