@@ -37,7 +37,7 @@ Download .NET Core 2.1.3 SDK and .NET Core Runtime 2.0.9 and install them. Downl
 * Change into the work directory:: $ cd WordCounter.Solution
 To edit the project, open the project in your preferred text editor.
 
-* To run the program, first navigate to the location of the WordCounter.cs file then compile and execute: $ cd WordCounter/Models $ mcs WordCounter.cs; mono WordCounter.exe;
+* To run the program, first navigate to the location of the Program.cs file then run these commands: $ dotnet restore $ dotnet build $ dotnet run
 
 * To run the tests, use these commands: $ cd WordCounter.Tests $ dotnet test
 
