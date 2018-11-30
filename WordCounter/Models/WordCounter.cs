@@ -38,7 +38,7 @@ namespace WordMaster
       return sentence == _sentence;
     }
 
-    public string WordCounterCheck()
+    public int WordCounterCheck()
     {
       string[] Arr = _sentence.Split(' ');
       
@@ -49,7 +49,7 @@ namespace WordMaster
           _counter++;
         }
       }
-      return _word + " appears" + _counter + " times in the sentence.";
+      return _counter;
     }
 
 
