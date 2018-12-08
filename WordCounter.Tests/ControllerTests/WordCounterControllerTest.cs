@@ -11,7 +11,7 @@ namespace WordMaster.Tests
     {
 
       [TestMethod]
-      public void Index_ReturnsCorrectView_True()
+      public void WordController_Index_ReturnsCorrectView_True()
       {
         //Arrange
         WordCounterController controller = new WordCounterController();
@@ -24,7 +24,7 @@ namespace WordMaster.Tests
       }
 
       [TestMethod]
-      public void Result_ReturnsCorrectView_True()
+      public void WordController_Result_ReturnsCorrectView_True()
       {
         //Arrange
         WordCounterController controller = new WordCounterController();

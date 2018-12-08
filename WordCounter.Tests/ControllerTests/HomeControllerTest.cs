@@ -11,7 +11,7 @@ namespace WordMaster.Tests
     {
 
       [TestMethod]
-      public void Index_ReturnsCorrectView_True()
+      public void HomeController_Index_ReturnsCorrectView_True()
       {
         //Arrange
         HomeController controller = new HomeController();
